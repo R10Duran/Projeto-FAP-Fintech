@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Cores padrão - inicio*/
+:root{
+  --roxo:#14003B;
+  --roxo_botao: hsla(223, 42%, 58%, 0.404);
+}
+/*Cores padrão - fim*/
+
+/*Padrão geral - inicio*/
+body{
+  background: var(--roxo);
+  color: white;
+  height: 100%;
+}
+
+body a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*Padrão geral - fim*/
+.facebook, .google, .twitter{
+  width: 25px;
+  height: 25px;
+  margin: .5em;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.facebook:hover, .google:hover, .twitter:hover{
+  transform: scale(1.2);
+}
+
+.login{
+  text-align: center;
+  margin-top: -3em;
+}
+
+.login-formulario{
+  display: block;
+  margin-top: -2.8em;
+}
+
+.info-icones-redes{
+  display: flex;
+  justify-content: center;
+}
+
+.info-texto{
+  text-align: center;
+}
+.label-login{
+  margin-right: 12.5em;
+}
+
+.esqueci-senha{
+  margin-left: 12em;
+  color: #B9B9C1;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.botao-login{
+  width: 110px;
+  height: 38px;
+  border-radius: 20px;
+  border-style: none;
+  margin-bottom: 1em;
+  font-weight: bold;
+  background: hsla(223, 42%, 58%, 0.404);
+  color: white;
+}
+
+.input-login:focus{
+  background-color: #e2e1e1;
+}
+
+
+.input-login{
+  height: 38px;
+  width: 250px;
+  border-radius: 10px;
+  border-style: none;
+  margin-bottom: .5em;
+}
+
+
+footer{
+  text-align: center;
+  padding: 15px;
+  margin-top: -15px;
+}
+
+
+@media (max-width: 480px) {
+
+  body{
+
+  }
+
+  footer{
+    text-align: left;
+  }
+}
